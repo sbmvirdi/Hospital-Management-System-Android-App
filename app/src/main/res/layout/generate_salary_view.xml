@@ -17,7 +17,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/salarySelect"
                 android:layout_weight="1"
-                android:text="Designation:"
+                android:text="@string/designation"
                 android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
                 />

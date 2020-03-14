@@ -5,4 +5,5 @@
     <string name="transaction_id">Transaction Id:</string>
     <string name="doctor_s_name">Doctor\'s Name:</string>
     <string name="total_amount">Total Amount:</string>
+    <string name="designation">Designation:</string>
 </resources>
