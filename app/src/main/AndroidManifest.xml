@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Staff.MyDuties"></activity>
+        <activity android:name=".User.DetailedTestReport"></activity>
+        <activity android:name=".Staff.MyDuties" />
         <activity android:name=".Staff.ViewSalary" />
         <activity android:name=".ReceptionStaff.ViewSalary" />
         <activity android:name=".ReceptionStaff.CreatePatientID" />

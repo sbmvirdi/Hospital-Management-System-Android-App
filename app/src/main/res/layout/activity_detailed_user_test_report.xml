@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".User.Treatment">
+    tools:context=".User.DetailedTestReport">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/treatment_user_recycler"/>
+        android:id="@+id/detailed_user_treatment_report"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

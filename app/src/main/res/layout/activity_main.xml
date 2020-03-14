@@ -27,4 +27,15 @@
         android:gravity="center"
         android:textSize="20sp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u00A9 Web Geeks"
+        android:fontFamily="@font/nunito_sans"
+        android:textColor="#000"
+        android:layout_below="@id/logoLabel"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
 </RelativeLayout>

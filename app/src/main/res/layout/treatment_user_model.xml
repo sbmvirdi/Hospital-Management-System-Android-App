@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView android:layout_width="match_parent"
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
@@ -13,9 +14,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:id="@+id/ViewAppointMentsDate"
-            android:text="14 March 2020"
             android:textColor="#000"
+            android:id="@+id/ViewTreatmentsDate"
+            android:text="14 March 2020"
             android:textSize="17sp"
             android:fontFamily="@font/nunito_sans"
             android:layout_alignParentRight="true"
@@ -26,7 +27,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
-            android:layout_below="@+id/ViewAppointMentsDate"
+            android:layout_below="@+id/ViewTreatmentsDate"
+            android:orientation="horizontal"
+            android:id="@+id/transactionId"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/treatment_id"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="start"
+                android:text=" 12345678"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/transactionId"
             android:orientation="horizontal"
             android:id="@+id/doctorsName"
             android:layout_height="wrap_content">
@@ -39,29 +66,30 @@
                 android:text="@string/doctor_s_name"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20sp"
                 android:textColor="#000"
+                android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
-                />
+                android:text="DOCTOR STRANGE"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_marginTop="8dp"
             android:layout_below="@+id/doctorsName"
             android:orientation="horizontal"
-            android:id="@+id/transactionId"
+            android:textColor="#000"
+            android:id="@+id/chiefComplaints"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/nunito_sans"
-                android:text="Doctor ID:"
+                android:text="Chief Complaints"
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
@@ -69,69 +97,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="start"
+                android:text="Complaints"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/chiefComplaints"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/total_amount"
+                android:textSize="20sp"
+                android:gravity="start"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
-                android:textColor="#000"
-                android:text=" 12345678"/>
+                android:text="Rs. 9,000/-"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_below="@+id/transactionId"
-            android:orientation="horizontal"
-            android:id="@+id/DateAppointmentLayout"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans"
-                android:text="Date: "
-                android:textSize="20sp"
-                android:textColor="#000"
-                android:gravity="start"/>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textColor="#000"
-                android:id="@+id/DateSpinner"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_below="@+id/DateAppointmentLayout"
-            android:orientation="horizontal"
-            android:id="@+id/TimeAppointmentLayout"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_sans"
-                android:text="Time: "
-                android:textColor="#000"
-                android:textSize="20sp"
-                android:gravity="start"/>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textColor="#000"
-                android:id="@+id/TimeSpinner"/>
-        </LinearLayout>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_bg"
-            android:text="@string/submit"
-            android:fontFamily="@font/overpass_semibold"
-            android:layout_below="@id/TimeAppointmentLayout"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="15dp"
-            android:textColor="@color/colorPrimary"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="15dp"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
