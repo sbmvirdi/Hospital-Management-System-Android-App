@@ -10,4 +10,8 @@
     <string name="submit">submit</string>
     <string name="salary">Salary:</string>
     <string name="id">ID:</string>
+    <string name="room_number">Room Number:</string>
+    <string name="patient_id">Patient ID:</string>
+    <string name="treatment_id">Treatment ID:</string>
+    <string name="doctor_s_assigned">Doctor\'s Assigned:</string>
 </resources>
