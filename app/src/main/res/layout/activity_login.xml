@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_undraw_fingerprint_swrc"
+                android:id="@+id/topimage"
+                android:contentDescription="@string/app_name" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:contentPaddingTop="10dp"
+                app:contentPaddingBottom="10dp"
+                app:contentPadding="10dp"
+                android:id="@+id/card"
+                android:layout_below="@+id/topimage"
+                app:cardUseCompatPadding="true"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:id="@+id/logintext"
+                        android:fontFamily="@font/overpass_semibold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/usernamelayout"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@+id/logintext"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/username"
+                            android:fontFamily="@font/overpass_semibold"
+                            android:hint="Enter Username" >
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/passwordlayout"
+                        android:layout_marginTop="10dp"
+                        app:endIconMode="password_toggle"
+                        android:layout_below="@+id/usernamelayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/password"
+                            android:inputType="textPassword"
+
+                            android:fontFamily="@font/overpass_semibold"
+                            android:hint="Enter Password" >
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_login"
+                android:foregroundGravity="center"
+                android:text="Login"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/colorPrimary"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:fontFamily="@font/overpass_semibold"
+                android:layout_below="@+id/card"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

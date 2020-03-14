@@ -10,15 +10,17 @@
             android:layout_height="wrap_content"
             android:id="@+id/prescriptionText"
             android:layout_margin="10dp"
+            android:textColor="#000"
             android:text="@string/prescription"
-            android:textSize="30sp"
-            android:fontFamily="@font/nunito_sans"
+            android:textSize="25sp"
+            android:fontFamily="@font/overpass_semibold"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/datePrescription"
             android:layout_alignParentEnd="true"
+            android:textColor="#000"
             android:layout_below="@+id/prescriptionText"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
@@ -39,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:text="@string/treatment_id"
                 android:textSize="20sp"
@@ -47,6 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="#000"
                 android:id="@+id/treatmentIdPrescription"
                 android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
@@ -68,17 +72,21 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/nunito_sans"
                 android:text="@string/patient_id"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:maxLength="6"
+                android:inputType="number"
+                android:textColor="#000"
                 android:id="@+id/PatientIdPrescription"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
-                android:text=" 12345678"/>
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,6 +103,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/nunito_sans"
                 android:text="@string/doctor_s_name"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
             <TextView
@@ -105,6 +114,7 @@
                 android:id="@+id/doctorsNamePrescription"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
+                android:textColor="#000"
                 android:text=" Doctor Strange"/>
         </LinearLayout>
         <TextView
@@ -113,28 +123,43 @@
             android:layout_marginTop="8dp"
             android:layout_centerHorizontal="true"
             android:text="@string/treatment"
-            android:textSize="30sp"
+            android:textSize="25sp"
+            android:textColor="#000"
             android:id="@+id/treatmentText"
-            android:fontFamily="@font/actor"
+            android:fontFamily="@font/overpass_semibold"
             android:layout_below="@id/doctorPrescriptionLayout"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/addButton"
+            android:background="@drawable/ic_add_black_24dp"
+            android:layout_below="@+id/treatmentText"
+            />
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_below="@id/treatmentText"
+            android:layout_below="@id/addButton"
             android:id="@+id/recyclerPrescription"
             android:layout_height="wrap_content"/>
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/recyclerPrescription"
-            android:hint="Comments"
-            android:fontFamily="@font/nunito_sans"
-            android:id="@+id/commentPrescription"
+            android:layout_height="100dp"
+            android:id="@+id/prescriptionlayout"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_below="@+id/recyclerPrescription"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/commentPrescription"
+                android:fontFamily="@font/overpass_semibold"
+                android:hint="Enter Prescription Comments " >
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,10 +167,13 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/commentPrescription"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:layout_below="@+id/prescriptionlayout"
             android:layout_marginRight="15dp"
             android:text="@string/submit"
-            android:fontFamily="@font/nunito_sans"
+            android:fontFamily="@font/overpass_semibold"
             android:layout_marginEnd="15dp" />
     </RelativeLayout>
 </androidx.core.widget.NestedScrollView>

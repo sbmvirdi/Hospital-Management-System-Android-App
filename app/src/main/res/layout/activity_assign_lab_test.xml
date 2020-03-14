@@ -11,8 +11,9 @@
             android:id="@+id/LabTestsText"
             android:layout_margin="10dp"
             android:text="@string/lab_tests"
-            android:textSize="30sp"
-            android:fontFamily="@font/nunito_sans"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:fontFamily="@font/overpass_semibold"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -22,6 +23,7 @@
             android:layout_below="@+id/LabTestsText"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
+            android:textColor="#000"
             android:text="14 March 2020"
             android:fontFamily="@font/nunito_sans"
             android:textSize="15sp"
@@ -41,6 +43,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/nunito_sans"
                 android:text="@string/treatment_id"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
             <TextView
@@ -49,6 +52,7 @@
                 android:layout_weight="1"
                 android:id="@+id/testsPrescription"
                 android:textSize="20sp"
+                android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:text=" 12345678"/>
@@ -66,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:text="@string/patient_id"
                 android:textSize="20sp"
@@ -75,6 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:textColor="#000"
                 android:id="@+id/PatientIdTests"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
@@ -96,12 +102,14 @@
                 android:fontFamily="@font/nunito_sans"
                 android:text="@string/doctor_s_name"
                 android:textSize="20sp"
+                android:textColor="#000"
                 android:gravity="start"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:textColor="#000"
                 android:id="@+id/doctorsNamePrescription"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
@@ -113,8 +121,9 @@
             android:layout_marginTop="8dp"
             android:layout_centerHorizontal="true"
             android:text="@string/tests"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:id="@+id/testsText"
+            android:textColor="#000"
             android:fontFamily="@font/actor"
             android:layout_below="@id/doctorTestLayout"/>
         <androidx.recyclerview.widget.RecyclerView
@@ -124,17 +133,25 @@
             android:layout_below="@id/testsText"
             android:id="@+id/recyclerTests"
             android:layout_height="wrap_content"/>
-        <EditText
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/recyclerTests"
-            android:hint="Comments"
-            android:fontFamily="@font/nunito_sans"
-            android:id="@+id/commentTests"
+            android:layout_height="100dp"
+            android:id="@+id/commentlayout"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_below="@+id/recyclerTests"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/commentLabTest"
+                android:fontFamily="@font/overpass_semibold"
+                android:hint="Enter Comments ">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,10 +159,12 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/commentTests"
+            android:background="@drawable/button_bg"
+            android:layout_below="@+id/commentlayout"
             android:layout_marginRight="15dp"
             android:text="@string/submit"
-            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/overpass_semibold"
             android:layout_marginEnd="15dp" />
     </RelativeLayout>
 </androidx.core.widget.NestedScrollView>

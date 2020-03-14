@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.hms.Doctor.DoctorActivity;
 import com.example.hms.User.UserActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this, UserActivity.class);
+                Intent i = new Intent(MainActivity.this, DoctorActivity.class);
                 startActivity(i);
                 finish();
             }
