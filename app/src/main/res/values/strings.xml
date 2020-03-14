@@ -12,6 +12,10 @@
     <string name="id">ID:</string>
     <string name="room_number">Room Number:</string>
     <string name="patient_id">Patient ID:</string>
-    <string name="treatment_id">Treatment ID:</string>
     <string name="doctor_s_assigned">Doctor\'s Assigned:</string>
+    <string name="prescription"><u>PRESCRIPTION</u></string>
+    <string name="treatment_id">Treatment ID:</string>
+    <string name="treatment"><u>TREATMENT</u></string>
+    <string name="lab_tests">LAB TESTS</string>
+    <string name="tests">TESTS</string>
 </resources>

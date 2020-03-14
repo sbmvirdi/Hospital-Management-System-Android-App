@@ -3,5 +3,6 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/actor</item>
         <item>@font/nunito_sans</item>
+        <item>@font/overpass_semibold</item>
     </array>
 </resources>

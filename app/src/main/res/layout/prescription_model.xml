@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_sans"
+                android:id="@+id/MedicineName"
+                android:text="Medicine Name"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#222"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_sans"
+                android:id="@+id/medicineQuantity"
+                android:text="Quantity"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#222"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/medicineDosage"
+                android:text="Dosage"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
