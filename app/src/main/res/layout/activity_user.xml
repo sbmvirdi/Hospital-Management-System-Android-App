@@ -1,7 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    tools:context=".Doctor.DoctorActivity">
 
-</androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Portal Navigation"
+            android:textColor="#000"
+            android:fontFamily="@font/overpass_semibold"
+            android:textSize="25sp"
+            android:id="@+id/portallabel"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#a8a8a8"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/portalview"
+            android:layout_below="@+id/portallabel"
+            />
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/portalview"
+            android:id="@+id/appointmentsCard"
+            android:layout_marginTop="10dp"
+            app:strokeColor="#66788F"
+            android:elevation="2dp"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/takeAppointmentsImage"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/take_appointment"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/appointmentsCard"
+            android:id="@+id/testreportscard"
+            android:layout_marginTop="10dp"
+            app:strokeColor="#66788F"
+            android:elevation="2dp"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/testreportsimage"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/test_reports"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/testreportscard"
+            android:id="@+id/treatmentscard"
+            android:layout_marginTop="10dp"
+            app:strokeColor="#66788F"
+            android:elevation="2dp"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/treatmentcardImage"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/treatment_card"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
 
