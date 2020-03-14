@@ -33,6 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
                 android:text="@string/transaction_id"
                 android:textSize="20sp"
                 android:gravity="start"/>
@@ -56,6 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
                 android:text="@string/doctor_s_name"
                 android:textSize="20sp"
                 android:gravity="start"/>
@@ -78,6 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/nunito_sans"
                 android:text="@string/total_amount"
                 android:textSize="20sp"
                 android:gravity="start"/>
