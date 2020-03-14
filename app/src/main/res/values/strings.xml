@@ -2,4 +2,7 @@
     <string name="app_name">HMS</string>
     <string name="take_appointments">Take Appointments</string>
     <string name="view_treatment">View Treatment</string>
+    <string name="transaction_id">Transaction Id:</string>
+    <string name="doctor_s_name">Doctor\'s Name:</string>
+    <string name="total_amount">Total Amount:</string>
 </resources>
