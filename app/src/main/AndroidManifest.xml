@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Doctor.AssignLabTest"></activity>
+        <activity android:name=".Doctor.AssignedRooms"></activity>
+        <activity android:name=".Doctor.AssignLabTest" />
         <activity android:name=".Doctor.GeneratePrescription" />
         <activity android:name=".User.UserActivity" />
         <activity android:name=".Staff.StaffActivity" />
