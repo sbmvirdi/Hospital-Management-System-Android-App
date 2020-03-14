@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <include layout="@layout/card_template"
+            android:id="@+id/calculateBill"/>
+        <include layout="@layout/card_template"
+            android:id="@+id/createpatientId"/>
+        <include layout="@layout/card_template"
+            android:id="@+id/ViewSalary" />
+        <include layout="@layout/card_template"
+            android:id="@+id/Emergency"/>
+    </LinearLayout>
+</ScrollView>

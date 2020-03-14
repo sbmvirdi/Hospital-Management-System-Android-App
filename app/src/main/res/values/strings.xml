@@ -5,4 +5,17 @@
     <string name="transaction_id">Transaction Id:</string>
     <string name="doctor_s_name">Doctor\'s Name:</string>
     <string name="total_amount">Total Amount:</string>
+    <string name="designation">Designation:</string>
+    <string name="month">Month:</string>
+    <string name="submit">submit</string>
+    <string name="salary">Salary:</string>
+    <string name="id">ID:</string>
+    <string name="room_number">Room Number:</string>
+    <string name="patient_id">Patient ID:</string>
+    <string name="doctor_s_assigned">Doctor\'s Assigned:</string>
+    <string name="prescription"><u>PRESCRIPTION</u></string>
+    <string name="treatment_id">Treatment ID:</string>
+    <string name="treatment"><u>TREATMENT</u></string>
+    <string name="lab_tests">LAB TESTS</string>
+    <string name="tests">TESTS</string>
 </resources>
