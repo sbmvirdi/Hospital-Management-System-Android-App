@@ -39,7 +39,7 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -50,15 +50,6 @@
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:text=" 12345678"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="enter"
-                android:textColor="#000"
-                android:fontFamily="@font/overpass_semibold"
-                android:background="@drawable/button_bg"
-
-                />
 
 
         </LinearLayout>
@@ -79,16 +70,17 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:inputType="number"
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:id="@+id/roomcharges"
-                android:text="2000 INR"/>
+                android:text="2000"/>
         </LinearLayout>
 
         <LinearLayout
@@ -107,16 +99,18 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:editable="false"
                 android:textColor="#000"
+                android:inputType="number"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:id="@+id/basic_charges"
-                android:text="250 INR"/>
+                android:text="250"/>
         </LinearLayout>
 
 
@@ -136,16 +130,17 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:inputType="number"
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:id="@+id/treatmentcharges"
-                android:text="2100 INR"/>
+                android:text="2100"/>
         </LinearLayout>
 
 
@@ -165,16 +160,17 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:inputType="number"
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:id="@+id/labcharges"
-                android:text="0 INR"/>
+                android:text="0"/>
         </LinearLayout>
 
 
@@ -196,16 +192,17 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
+                android:inputType="number"
                 android:textColor="#000"
                 android:id="@+id/dispancarycharges"
-                android:text="700 INR"/>
+                android:text="700"/>
         </LinearLayout>
 
 
@@ -225,17 +222,29 @@
                 android:textSize="20sp"
                 android:textColor="#000"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
+                android:inputType="number"
                 android:textColor="#000"
                 android:id="@+id/totalcharges"
-                android:text="700 INR"/>
+                android:text="700"/>
         </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitbill"
+            android:layout_below="@+id/total"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"/>
 
 
 

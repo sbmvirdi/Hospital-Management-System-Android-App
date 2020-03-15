@@ -9,8 +9,13 @@ import android.os.Handler;
 import com.example.hms.Doctor.DoctorActivity;
 import com.example.hms.HeadStaff.HeadStaffActivity;
 import com.example.hms.LabIncharge.LabInchargeActivity;
+import com.example.hms.ReceptionStaff.CalculateBill;
+import com.example.hms.ReceptionStaff.EmergencyCase;
 import com.example.hms.ReceptionStaff.ReceptionStaffActivity;
 import com.example.hms.Staff.StaffActivity;
+import com.example.hms.User.Appointments;
+import com.example.hms.User.TestReports;
+import com.example.hms.User.Treatment;
 import com.example.hms.User.UserActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,13 +24,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent i = new Intent(MainActivity.this, UserActivity.class);
-                startActivity(i);
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            Intent i = new Intent(MainActivity.this, EmergencyCase.class);
+            startActivity(i);
+            finish();
         },1000);
     }
 }

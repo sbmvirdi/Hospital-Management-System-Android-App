@@ -39,10 +39,11 @@
                 android:text="@string/doctor_s_name"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <EditText
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:id="@+id/doctorspinner"
                 android:textSize="20sp"
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
@@ -70,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:id="@+id/doctorid"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:textColor="#000"
@@ -126,6 +128,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_bg"
             android:text="@string/submit"
+            android:id="@+id/bookappointment"
             android:fontFamily="@font/overpass_semibold"
             android:layout_below="@id/TimeAppointmentLayout"
             android:layout_alignParentEnd="true"

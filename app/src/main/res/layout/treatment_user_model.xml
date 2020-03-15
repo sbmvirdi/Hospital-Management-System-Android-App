@@ -46,6 +46,7 @@
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:textColor="#000"
+                android:id="@+id/treatmentid"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:text=" 12345678"/>
@@ -71,6 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#000"
+                android:id="@+id/doctorname"
                 android:textSize="20sp"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
@@ -101,6 +103,7 @@
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
+                android:id="@+id/complaints"
                 android:text="Complaints"/>
         </LinearLayout>
         <LinearLayout
@@ -124,6 +127,7 @@
                 android:layout_weight="1"
                 android:textColor="#000"
                 android:textSize="20sp"
+                android:id="@+id/amount"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 android:text="Rs. 9,000/-"/>
