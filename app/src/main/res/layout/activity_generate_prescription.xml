@@ -24,7 +24,7 @@
             android:layout_below="@+id/prescriptionText"
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
-            android:text="14 March 2020"
+            android:text="15 March 2020"
             android:fontFamily="@font/nunito_sans"
             android:textSize="15sp"
             android:layout_marginEnd="20dp" />
@@ -136,13 +136,13 @@
             android:background="@drawable/ic_add_black_24dp"
             android:layout_below="@+id/treatmentText"
             />
-        <androidx.recyclerview.widget.RecyclerView
+        <ListView
             android:layout_width="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_below="@id/addButton"
             android:id="@+id/recyclerPrescription"
-            android:layout_height="wrap_content"/>
+            android:layout_height="100dp"/>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -169,6 +169,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
+            android:id="@+id/submit"
             android:background="@drawable/button_bg"
             android:layout_below="@+id/prescriptionlayout"
             android:layout_marginRight="15dp"

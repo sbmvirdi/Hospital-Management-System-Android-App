@@ -24,7 +24,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
             android:textColor="#000"
-            android:text="14 March 2020"
+            android:text="15 March 2020"
             android:fontFamily="@font/nunito_sans"
             android:textSize="15sp"
             android:layout_marginEnd="20dp" />
@@ -75,11 +75,12 @@
                 android:text="@string/patient_id"
                 android:textSize="20sp"
                 android:gravity="start"/>
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:inputType="number"
                 android:textColor="#000"
                 android:id="@+id/PatientIdTests"
                 android:fontFamily="@font/nunito_sans"
@@ -113,7 +114,7 @@
                 android:id="@+id/doctorsNamePrescription"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
-                android:text=" Doctor Strange"/>
+                android:text="Varun Gupta"/>
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -126,13 +127,15 @@
             android:textColor="#000"
             android:fontFamily="@font/actor"
             android:layout_below="@id/doctorTestLayout"/>
-        <androidx.recyclerview.widget.RecyclerView
+        <TextView
             android:layout_width="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/testsText"
-            android:id="@+id/recyclerTests"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@+id/testsText"
+            android:id="@+id/bloodtestlabel"
+            android:text="Blood test"/>
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -142,7 +145,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_below="@+id/recyclerTests"
+            android:layout_below="@+id/bloodtestlabel"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -163,6 +166,7 @@
             android:layout_below="@+id/commentlayout"
             android:layout_marginRight="15dp"
             android:text="@string/submit"
+            android:id="@+id/submit"
             android:textColor="@color/colorPrimary"
             android:fontFamily="@font/overpass_semibold"
             android:layout_marginEnd="15dp" />

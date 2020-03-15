@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/medicineDetailTable"
+    android:layout_marginTop="8dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_sans"
+            android:id="@+id/roomNumberID"
+            android:text="Room Number"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#222"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_sans"
+            android:id="@+id/patientID"
+            android:text="Patient ID"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#222"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_sans"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/treatmentID"
+            android:text="Treatment ID"/>
+
+    </LinearLayout>
+</RelativeLayout>

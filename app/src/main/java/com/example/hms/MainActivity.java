@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.hms.Doctor.AssignedRooms;
 import com.example.hms.Doctor.DoctorActivity;
 import com.example.hms.HeadStaff.HeadStaffActivity;
 import com.example.hms.LabIncharge.LabInchargeActivity;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() -> {
-            Intent i = new Intent(MainActivity.this, EmergencyCase.class);
+            Intent i = new Intent(MainActivity.this, DoctorActivity.class);
             startActivity(i);
             finish();
         },1000);
