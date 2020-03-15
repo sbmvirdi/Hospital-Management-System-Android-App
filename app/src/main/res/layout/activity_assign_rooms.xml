@@ -38,6 +38,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:inputType="number"
+                android:id="@+id/treatmentIdInput"
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
@@ -64,6 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="20sp"
+                android:inputType="number"
+                android:id="@+id/patientIDInput"
                 android:textColor="#000"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
@@ -91,6 +95,8 @@
                 android:layout_weight="1"
                 android:textSize="20sp"
                 android:textColor="#000"
+                android:inputType="number"
+                android:id="@+id/RoomNumberInput"
                 android:fontFamily="@font/nunito_sans"
                 android:gravity="start"
                 />
@@ -117,57 +123,11 @@
             android:layout_below="@id/addButton"
             android:layout_marginTop="8dp"
             android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="horizontal"
-
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:textColor="#000"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/nunito_sans"
-                    android:id="@+id/MedicineName"
-                    android:text="Medicine Name"/>
-                <View
-                    android:layout_width="2dp"
-                    android:layout_height="match_parent"
-                    android:background="#222"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:textSize="18sp"
-                    android:textColor="#000"
-                    android:fontFamily="@font/nunito_sans"
-                    android:id="@+id/medicineQuantity"
-                    android:text="Quantity"
-                    />
-                <View
-                    android:layout_width="2dp"
-                    android:layout_height="match_parent"
-                    android:background="#222"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="3"
-                    android:gravity="center"
-                    android:fontFamily="@font/nunito_sans"
-                    android:textSize="18sp"
-                    android:textColor="#000"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/medicineDosage"
-                    android:text="Dosage"/>
-
-            </LinearLayout>
         </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/doctorsList"
+            android:id="@+id/roomsList"
             android:layout_above="@+id/submitRooms"
             android:layout_below="@+id/medicineDetailTable"/>
         <Button
