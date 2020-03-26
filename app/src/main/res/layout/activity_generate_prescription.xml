@@ -133,13 +133,15 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id="@+id/addButton"
-            android:background="@drawable/ic_add_black_24dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="@drawable/ic_add_black_24dp"
             android:layout_below="@+id/treatmentText"
             />
         <ListView
             android:layout_width="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
+            android:nestedScrollingEnabled="true"
             android:layout_below="@id/addButton"
             android:id="@+id/recyclerPrescription"
             android:layout_height="100dp"/>

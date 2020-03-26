@@ -28,7 +28,7 @@ public class HeadStaffActivity extends AppCompatActivity {
 
         AssignRoomsCard.setOnClickListener(v->{
 
-            Intent i = new Intent(HeadStaffActivity.this, AssignedRooms.class);
+            Intent i = new Intent(HeadStaffActivity.this, AssignRooms.class);
             startActivity(i);
         });
 

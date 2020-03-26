@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <androidx.cardview.widget.CardView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_margin="8dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -115,7 +120,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id="@+id/addButton"
-            android:background="@drawable/ic_add_black_24dp"
+            android:foreground="@drawable/ic_add_black_24dp"
+            android:background="?android:attr/selectableItemBackground"
             android:layout_below="@+id/doctorsAssignedText"
             />
         <RelativeLayout android:layout_width="match_parent"
@@ -146,3 +152,5 @@
             android:layout_alignParentRight="true" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
